@@ -18,8 +18,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'C:/Users/thrif/Documents/Unreal Projects/MyProject10/Binaries/HTML5/MyProject10.data';
-    var REMOTE_PACKAGE_BASE = 'MyProject10.data';
+    var PACKAGE_NAME = 'C:/Users/thrif/Documents/Unreal Projects/MyProject10/Binaries/HTML5/MyProject10-HTML5-Shipping.data';
+    var REMOTE_PACKAGE_BASE = 'MyProject10-HTML5-Shipping.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -149,10 +149,10 @@ Module['FS_createPath']('/MyProject10/Content', 'Paks', true, true);
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
-              Module['removeRunDependency']('datafile_C:/Users/thrif/Documents/Unreal Projects/MyProject10/Binaries/HTML5/MyProject10.data');
+              Module['removeRunDependency']('datafile_C:/Users/thrif/Documents/Unreal Projects/MyProject10/Binaries/HTML5/MyProject10-HTML5-Shipping.data');
 
     };
-    Module['addRunDependency']('datafile_C:/Users/thrif/Documents/Unreal Projects/MyProject10/Binaries/HTML5/MyProject10.data');
+    Module['addRunDependency']('datafile_C:/Users/thrif/Documents/Unreal Projects/MyProject10/Binaries/HTML5/MyProject10-HTML5-Shipping.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
@@ -173,6 +173,6 @@ Module['FS_createPath']('/MyProject10/Content', 'Paks', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 53, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"start": 53, "audio": 0, "end": 95, "filename": "/UE4CommandLine.txt"}, {"start": 95, "audio": 0, "end": 512598541, "filename": "/MyProject10/Content/Paks/MyProject10-HTML5.pak"}], "remote_package_size": 512598541, "package_uuid": "a207bab2-8516-4396-afc3-6998ed44e518"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 53, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"start": 53, "audio": 0, "end": 95, "filename": "/UE4CommandLine.txt"}, {"start": 95, "audio": 0, "end": 512597120, "filename": "/MyProject10/Content/Paks/MyProject10-HTML5.pak"}], "remote_package_size": 512597120, "package_uuid": "8d1f8cdb-9d9c-473f-bd02-46a8e773747b"});
 
 })();
